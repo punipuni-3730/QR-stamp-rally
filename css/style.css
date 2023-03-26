@@ -1,0 +1,234 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.head{
+    background-color: white;
+}
+
+.head img{
+    height: 200px;
+    width: auto;
+}
+
+.Home{
+    background-color: white;
+    font-size: 150px;
+    color: black;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.stamp {
+    float: left;
+    width: 50%;
+    height: 50%;
+    margin-bottom: -5px;
+}
+
+.get-stamp {
+    text-align: center;
+}
+
+.center {
+    font-size: 60px;
+}
+
+.optional-contents{
+    font-size: 40px;
+    display: flex;
+}
+
+.ext-menu{
+    margin: 20px;
+    font-size: 40px;
+    list-style: none;
+}
+
+button {
+    width: 250px;
+    height: 150px;
+    font-size: 29px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.under-menu{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    font-size: 0;
+    z-index: 99;
+    background-color: #262626;
+ }
+
+.under-menu ul{
+    display: flex;
+    list-style: none;
+    padding:0;
+    margin:0;
+    width:100%;
+    text-align: center;
+ }
+
+ .under-menu img{
+    width: 100%;
+ }
+
+.under-menu li{
+    margin: 10px;
+}
+
+.comment{
+    font-size: 50px;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #3584bb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 6px;
+    width: 50px;
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 16px;
+}
+.menu-btn span:after {
+    top: 16px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: white;
+}
+.menu-content ul {
+    padding: 230px 10px 10px 20px;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 60px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 9px;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #3584bb;
+    transition: all 0.5s;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;
+}
+
+.howto img{
+    width: 600px;
+}
+
+.howto{
+    margin-bottom:100px;
+}
+
+.howto span{
+    font-weight: bold;
+}
+.howto p{
+    font-size: 60px;
+}
+.warn img{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    width: auto;
+    height: 200px;
+    text-align:center;
+}
+
+.warn{
+    margin-bottom: 150px;
+    margin-left: -10px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: red;
+    color :white;
+    width: 100%;
+}
+
+.temp{
+    width: 100%;
+}

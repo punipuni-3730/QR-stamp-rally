@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+  <title>スタンプラリー管理メニュー</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<body>
+  <header>
+    <div class="head">
+      <a href="index.html"><img src="/img/head.png"></a>
+    </div>
+  </header>
+  <div class="optional-contents">
+    <div class="extra">
+    <h1 style="font-size: 50px">スタンプ取得</h1>
+    <ul class="ext-menu">
+      <li class="">
+        <button onclick="alert('取得しました');Cookies.set('stamp1', 'true');">1番目の<br>スタンプを取得</button>
+      </li>
+      <li>
+        <button onclick="alert('取得しました');Cookies.set('stamp2', 'true');">2番目の<br>スタンプを取得</button>
+      </li>
+      <li>
+        <button onclick="alert('取得しました');Cookies.set('stamp3', 'true');">3番目の<br>スタンプを取得</button>
+      </li>
+      <li>
+        <button onclick="alert('取得しました');Cookies.set('stamp4', 'true');">4番目の<br>スタンプを取得</button>
+      </li>
+      <li>
+        <button onclick="alert('取得しました');Cookies.set('stamp1', 'true');Cookies.set('stamp2', 'true');Cookies.set('stamp3', 'true');Cookies.set('stamp4', 'true');">すべての<br>スタンプを取得</button>
+      </li>
+    </ul>
+    </div>
+    <div class="extra">
+      <h1 style="font-size: 50px">スタンプ削除</h1>
+      <ul class="ext-menu">
+        <li class="">
+          <button onclick="alert('削除しました');Cookies.remove('stamp1');">1番目の<br>スタンプを削除</button>
+        </li>
+        <li>
+          <button onclick="alert('削除しました');Cookies.remove('stamp2');">2番目の<br>スタンプを削除</button>
+        </li>
+        <li>
+          <button onclick="alert('削除しました');Cookies.remove('stamp3');">3番目の<br>スタンプを削除</button>
+        </li>
+        <li>
+          <button onclick="alert('削除しました');Cookies.remove('stamp4');">4番目の<br>スタンプを削除</button>
+        </li>
+        <li>
+          <button onclick="alert('削除しました');Cookies.remove('stamp1');Cookies.remove('stamp2');Cookies.remove('stamp3');Cookies.remove('stamp4');">すべての<br>スタンプを削除</button>
+        </li>
+      </ul>
+    </div>
+    <div class="extra">
+      <h1 style="font-size: 50px">各リンク</h1>
+      <ul class="ext-menu">
+        <li class="">
+          <button onclick="location.href='index.html'">トップページ</button>
+        </li>
+        <li class="">
+          <button onclick="location.href='stamp_1poly3wq2o1y4ujxyhc68.html'">1番目の<br>スタンプページ</button>
+        </li>
+        <li>
+          <button onclick="location.href='stamp_2ukd6ig5bj83vllbt22km.html'">2番目の<br>スタンプページ</button>
+        </li>
+        <li>
+          <button onclick="location.href='stamp_38dqnbwxrbifyc1i5vcwu.html'">3番目の<br>スタンプページ</button>
+        </li>
+        <li>
+          <button onclick="location.href='stamp_45av5iu1mlxjfaw54i32a.html'">4番目の<br>スタンプページ</button>
+        </li>
+      </ul>
+      </div>
+</body>
+</html>
